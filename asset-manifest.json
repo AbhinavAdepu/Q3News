@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Q3News/static/css/main.ec985181.chunk.css",
+    "main.js": "/Q3News/static/js/main.26a14be9.chunk.js",
+    "main.js.map": "/Q3News/static/js/main.26a14be9.chunk.js.map",
+    "runtime-main.js": "/Q3News/static/js/runtime-main.43436ee8.js",
+    "runtime-main.js.map": "/Q3News/static/js/runtime-main.43436ee8.js.map",
+    "static/js/2.57ea7e92.chunk.js": "/Q3News/static/js/2.57ea7e92.chunk.js",
+    "static/js/2.57ea7e92.chunk.js.map": "/Q3News/static/js/2.57ea7e92.chunk.js.map",
+    "index.html": "/Q3News/index.html",
+    "precache-manifest.fc52debce749d7b1e71f142b6321dcb4.js": "/Q3News/precache-manifest.fc52debce749d7b1e71f142b6321dcb4.js",
+    "service-worker.js": "/Q3News/service-worker.js",
+    "static/css/main.ec985181.chunk.css.map": "/Q3News/static/css/main.ec985181.chunk.css.map",
+    "static/js/2.57ea7e92.chunk.js.LICENSE.txt": "/Q3News/static/js/2.57ea7e92.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Q3News/static/media/q3.4041e741.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43436ee8.js",
+    "static/js/2.57ea7e92.chunk.js",
+    "static/css/main.ec985181.chunk.css",
+    "static/js/main.26a14be9.chunk.js"
+  ]
+}
