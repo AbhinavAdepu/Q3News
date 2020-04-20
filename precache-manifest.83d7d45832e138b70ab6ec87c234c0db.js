@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8043fb36e35f8e32b00999d78338dc8",
+    "revision": "947995613d0e6705a8ac4a8fe18303cc",
     "url": "/Q3News/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Q3News/static/css/2.b0d70484.chunk.css"
   },
   {
-    "revision": "c2628f8306775e09ec49",
+    "revision": "306cf81ec8dcb9af6280",
     "url": "/Q3News/static/css/main.0e9cc0ac.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Q3News/static/js/2.c7de8516.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c2628f8306775e09ec49",
-    "url": "/Q3News/static/js/main.88db0581.chunk.js"
+    "revision": "306cf81ec8dcb9af6280",
+    "url": "/Q3News/static/js/main.1e97fda4.chunk.js"
   },
   {
     "revision": "faf6cd706c23cd7b222a",
