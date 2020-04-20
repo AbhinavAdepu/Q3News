@@ -11,19 +11,119 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
-
+import Slider from "react-animated-slider";
+import "react-animated-slider/build/horizontal.css";
+import DetailNews from "./components/DetailNews";
+import Button from "@material-ui/core/Button";
 
 const App = () => {
+  const content = [
+    {
+      title: "Ensuring that we have the most Vulnerable homeless",
+      abstract:
+        "We started the charity 'We Are' as a bridge between the youth and the homeless who have a desire to serve in the town of Korutala. Tomatoes were then raised and distributed in cooperation with donors as part of an effort to satisfy the hunger of homeless people living on the road. Donors who would like to make a donation have asked for your help.",
+      media: [
+        {
+          "media-metadata": [
+            {
+              url:
+                "https://github.com/AbhinavAdepu/NYTimes_Task_Xebia/blob/master/src/svg/news2.PNG?raw=true"
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    },
+    {
+      title: "110 people attacked three saints in mumbai phalgar.",
+      abstract:
+        "Killing and killing until they are seriously injured.? Showing the guard to be safe? Running behind the police to protect the damage they hit? What is wrong with the weights? What is your opinion on the attack on the saints.!",
+      media: [
+        {
+          "media-metadata": [
+            {
+              url:
+                "https://raw.githubusercontent.com/AbhinavAdepu/NYTimes_Task_Xebia/master/MUMNews.PNG"
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    },
+    {
+      title: "Will China use corona as a bio war??",
+      abstract:
+        "February 1981, published in a book published in China on February Corona??? Will China use corona as a bio war?? Give your response as an average indian towards China's trend.",
+      image: "",
+      media: [
+        {
+          "media-metadata": [
+            {
+              url:
+                "https://scontent.ffjr1-3.fna.fbcdn.net/v/t1.0-9/90812945_120283676249806_7589649318785581056_n.jpg?_nc_cat=108&_nc_sid=110474&_nc_ohc=94OQmqYMHGoAX_hJ0mn&_nc_ht=scontent.ffjr1-3.fna&oh=79b41aac15267b1279ffd03ceef72047&oe=5EC32382"
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    },
+    {
+      title: "The pain of God that is seen",
+      abstract:
+        "The pain of God that is seen :- to save from corona virus Can't you stop coming out of the house by knowing our health and families that are taking care of our health and families? We are in hospital for you - you are at home for us",
+      media: [
+        {
+          "media-metadata": [
+            {
+              url:
+                "https://scontent.ffjr1-4.fna.fbcdn.net/v/t1.0-9/91140881_119407719670735_2205955723609767936_n.jpg?_nc_cat=106&_nc_sid=110474&_nc_ohc=h5xUfuTJeoMAX8gxGZD&_nc_ht=scontent.ffjr1-4.fna&oh=3e4ee2b683123062ef336c6284ba50aa&oe=5EC4E1A9"
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    },
+    {
+      title: "Victory to escape",
+      abstract:
+        "As a part of the janata office, the s under the guidance of extend district. Mr. Vivek garu, the woman who is suffering from full pregnant woman has been noticed and sent to the government hospital in police vehicle.",
+      media: [
+        {
+          "media-metadata": [
+            {
+              url:
+                "https://scontent.ffjr1-4.fna.fbcdn.net/v/t1.0-9/90194672_118958469715660_4662023593482256384_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=veUEBXskN4oAX8tvEsT&_nc_ht=scontent.ffjr1-4.fna&oh=8a894db2f88d10eb9944af20f34b0814&oe=5EC406ED"
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    }
+  ];
+
   const [getMostpopularArticles, setMostpopularArticles] = React.useState(null);
   const [mainData, setMainaData] = React.useState(null);
   const [ifException, setException] = React.useState(false);
   const [period, setPeriod] = React.useState(1);
   const [showsearchBase, setShowSearchBase] = React.useState(false);
+  const [openDetails, setOpenDetails] = React.useState(false);
+  const [itemDetail, setItemDetail] = React.useState(null);
   const handlePeriodChange = event => {
     setMostpopularArticles(null);
     setPeriod(event.target.value);
     loadArticles(period);
   };
+
+  const detailedNewsOpen = item => {
+    setOpenDetails(true);
+    setItemDetail(item);
+  };
+
   useEffect(() => {
     async function fetchData() {
       // You can await here
@@ -139,6 +239,45 @@ const App = () => {
           </div>
         </nav>
       </div>
+      <div
+        style={{
+          top: "72px",
+          position: "fixed",
+          height: "87px",
+          zIndex: 2,
+          width: "100%"
+        }}
+      >
+        <div
+          className="blinking"
+          style={{ left: 0, position: "absolute", zIndex: 10 }}
+        >
+          <b style={{ left: 0 }}>Latest News..</b>
+        </div>
+        <Slider style={{ width: "200px" }} autoplay={3000} duration={1000}>
+          {content.map((item, index) => (
+            <div>
+              <img
+                height="100%"
+                width="100%"
+                src={item.media[0]["media-metadata"][0].url}
+              />
+              <div className="center">
+                <h6 style={{ color: "#fff", background: "#000" }}>
+                  {item.title}
+                </h6>
+                <Button
+                  variant="contained"
+                  onClick={() => detailedNewsOpen(item)}
+                  color="secondary"
+                >
+                  Read more
+                </Button>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
       <div className="result-section">
         {getMostpopularArticles && (
           <NyListItem listArray={getMostpopularArticles} />
@@ -146,6 +285,13 @@ const App = () => {
       </div>
       {getMostpopularArticles === null && <Spinner></Spinner>}
       {ifException && <NoResults></NoResults>}
+      {openDetails && (
+        <DetailNews
+          setOpenDetails={setOpenDetails}
+          openDetails={openDetails}
+          itemDetail={itemDetail}
+        />
+      )}
     </div>
   );
 };

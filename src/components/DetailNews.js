@@ -13,6 +13,8 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { Slide } from "@material-ui/core";
+import roots from './../rsz_q3.jpg';
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -43,12 +45,17 @@ const DetailNews = props => {
           {itemDetail !== null && itemDetail.title}
         </DialogTitle>
         <DialogContent dividers>
-          <DialogContentText id="alert-dialog-description">
-            {itemDetail !== null && itemDetail.abstract}
-          </DialogContentText>
-          <DialogContentText id="alert-dialog-description">
-            <b>{` - ${itemDetail !== null && itemDetail.byline}`}</b>
-          </DialogContentText>
+            <img height="100%" width="100%"
+              src={
+                itemDetail.media.length !== 0 &&
+                itemDetail.media[0]["media-metadata"] !== undefined
+                  ? itemDetail.media[0]["media-metadata"][0].url
+                  : roots
+              }/>
+            <div>{itemDetail !== null && itemDetail.abstract}</div>
+          <div>
+            <b>{`Reporter - Kalyan Vanatadapula`}</b>
+          </div>
           <DialogContentText id="alert-dialog-description">
             <b>{itemDetail !== null && itemDetail.published_date}</b>
           </DialogContentText>

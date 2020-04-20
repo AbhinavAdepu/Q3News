@@ -9,8 +9,17 @@
 body {
   background: #fafafa;
 }
-.icon-q3{
-  background-image: url('q3.jpg');
+.slider {
+  height: 200px !important;
+}
+.slide.animateIn {
+  transition: 0.6s all !important;
+}
+.slide.animateOut {
+  transition: 0.6s all !important;
+}
+.icon-q3 {
+  background-image: url("q3.jpg");
   background-size: 100% 100%;
   width: 230px;
   height: 71px;
@@ -23,7 +32,15 @@ body {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.center {
+  top: -53%;
+  position: relative;
+}
+h6 {
+  top: 19px;
+  position: relative;
+  font-size: 12px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,7 +51,43 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+p {
+  width: 70%;
+  margin: auto;
+}  
+.blinking {
+  animation: blinkingText 0.82s infinite;
+}
+.blink{
+  left: 0;
+  position: "absolute";
+}
+.previousButton{
+left: 0 !important;
+}
+.slider a.previousButton, .slider a.nextButton{
+color: rgb(202, 63, 63) !important;
+}
+.nextButton{
+right:0 !important;
+}
+@keyframes blinkingText {
+  0% {
+    color: rgb(250, 6, 6);
+  }
+  49% {
+    color: rgb(255, 0, 0);
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
 .head-bar {
   background: #fff;
   width: 100%;
@@ -46,9 +99,17 @@ body {
 }
 .result-section {
   position: absolute;
-  top: 50px;
+  top: 270px;
   z-index: -1;
   width: 100%;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedSecondary {
+  top: -6px;
+  position: relative;
+  width: 131px;
+  height: 29px;
+  font-size: 12px;
+  line-height: 3px;
 }
 
 @keyframes App-logo-spin {
