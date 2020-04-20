@@ -42,7 +42,7 @@ const NyListItem = props => {
                           item.byline === ""
                             ? "By NewYork Times"
                             : item.byline.length > 18
-                            ? item.byline.substring(0, 18) + "..."
+                            ? item.byline.substring(0, 15) + "..."
                             : item.byline}
                         </div>
                         <div className="flex-design">
