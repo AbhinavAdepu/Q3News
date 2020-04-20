@@ -110,6 +110,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-contained
   height: 29px;
   font-size: 12px;
   line-height: 3px;
+  background: #b3220f;
 }
 
 @keyframes App-logo-spin {

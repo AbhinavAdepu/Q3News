@@ -61,7 +61,7 @@ const DetailNews = props => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary" autoFocus>
+          <Button onClick={handleClose} style={{color: '#b3220f'}} autoFocus>
             close
           </Button>
         </DialogActions>
