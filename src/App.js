@@ -12,7 +12,7 @@ import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Slider from "react-animated-slider";
-import "react-animated-slider/build/horizontal.css";
+import 'react-animated-slider/build/vertical.css';
 import DetailNews from "./components/DetailNews";
 import Button from "@material-ui/core/Button";
 

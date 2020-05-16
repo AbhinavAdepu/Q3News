@@ -102,6 +102,7 @@ right:0 !important;
   top: 270px;
   z-index: -1;
   width: 100%;
+  display: none;
 }
 button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedSecondary {
   top: -6px;
