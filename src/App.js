@@ -12,22 +12,23 @@ import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Slider from "react-animated-slider";
-import 'react-animated-slider/build/vertical.css';
+import "react-animated-slider/build/vertical.css";
 import DetailNews from "./components/DetailNews";
 import Button from "@material-ui/core/Button";
+import FlipPage from "react-flip-page";
 
 const App = () => {
   const content = [
     {
-      title: "Ensuring that we have the most Vulnerable homeless",
+      title: "మహీంద్రా లాక్ డౌన్ ఆఫర్",
       abstract:
-        "We started the charity 'We Are' as a bridge between the youth and the homeless who have a desire to serve in the town of Korutala. Tomatoes were then raised and distributed in cooperation with donors as part of an effort to satisfy the hunger of homeless people living on the road. Donors who would like to make a donation have asked for your help.",
+        "తెలంగాణ: వినియోగదారులను ఆకట్టుకునేలా,అమ్మకాలను పెంచుకునేందుకు మహీంద్రా వినూత్న పథకాలను ప్రవేశపెట్టింది.మహీంద్రా SUV కొనుగోలు చేసిన సంవత్సరం తర్వాత EMI రూపంలో డబ్బు చెల్లించే విధంగా ఆఫర్ ప్రకటించింది.100% ఆన్ రోడ్ ఫండింగ్ తో పాటు వ్యాపార వర్గాలను, సామాన్య ప్రజలను ఆశ్చర్యపరిచింది.",
       media: [
         {
           "media-metadata": [
             {
-              url:
-                "https://github.com/AbhinavAdepu/NYTimes_Task_Xebia/blob/master/src/svg/news2.PNG?raw=true"
+              video: false,
+              url: require("./news_images/mahindra.jpeg")
             }
           ]
         }
@@ -36,15 +37,15 @@ const App = () => {
       byline: "Kalyan Vanatadapula"
     },
     {
-      title: "110 people attacked three saints in mumbai phalgar.",
+      title: "వలసకార్మికుల కన్నీటి కష్టాలు",
       abstract:
-        "Killing and killing until they are seriously injured.? Showing the guard to be safe? Running behind the police to protect the damage they hit? What is wrong with the weights? What is your opinion on the attack on the saints.!",
+        "తెలంగాణ: లాక్ డౌన్ వల్ల వలస కార్మికులు సొంత గూటికి వెళ్లే ప్రయత్నాలు చేస్తూనే ఉన్నారు.చిన్న,పెద్ద అనే తేడా లేకుండా నడకబాటలో ప్రయాణాన్ని కొనసాగిస్తున్నారు.ఉపాధి లేక తినడానికి తిండి లేక వారి కష్టాలు కన్నీళ్లతో నిండిపోయాయి.ప్రభుత్వం ఏర్పాటు చేసిన శ్రామిక్ రైళ్లలో స్థలం సరిపోక వందల కిలోమీటర్లు నడిచి వెళ్తూ ఉన్నారు.",
       media: [
         {
           "media-metadata": [
             {
-              url:
-                "https://raw.githubusercontent.com/AbhinavAdepu/NYTimes_Task_Xebia/master/MUMNews.PNG"
+              video: false,
+              url: require("./news_images/news1.jpeg")
             }
           ]
         }
@@ -53,16 +54,86 @@ const App = () => {
       byline: "Kalyan Vanatadapula"
     },
     {
-      title: "Will China use corona as a bio war??",
+      title: "మెసేజ్ లింక్ లతో తస్మాత్ జాగ్రత్త.!",
       abstract:
-        "February 1981, published in a book published in China on February Corona??? Will China use corona as a bio war?? Give your response as an average indian towards China's trend.",
+        "తెలంగాణ: హైదరాబాద్ లో రెచ్చిపోతున్న సైబర్ నేరగాళ్లు. రీచార్జ్ లింకులు పంపిస్తూ లక్షలు మాయం చేస్తున్నారు. ఎల్బీనగర్ లోని ఓ ప్రభుత్వ ఉపాధ్యాయుడికి రీఛార్జి చేసుకోమని స్పామ్ లింక్ పంపగా దానిపై క్లిక్ చేసి paytm ఓపెన్ చేయగానే OTP హాక్ చేసి రూ'లక్షలు దోచేశారు.దీనిపై బాధితుడు పోలీసులకు ఫిర్యాదు చేశాడు.",
+      media: [
+        {
+          "media-metadata": [
+            {
+              video: false,
+              url: require("./news_images/beware.jpeg")
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    },
+    {
+      title: "తెలుగు పాటలకు చిందేస్తూ సందడి చేస్తున్న డేవిడ్ వార్నర్",
+      abstract:
+        "తెలంగాణ: తెలుగు పాటలపై మనసు పారేసుకున్న ఆస్ట్రేలియా క్రికెటర్ డేవిడ్ వార్నర్. మొన్న అల వైకుంఠపురం లోని 'బుట్టబొమ్మ' మరియు 'రాములో రాముల' కి చిందు వేయగా.. తాజాగా NTR పుట్టినరోజు సందర్భంగా జనతా గ్యారేజ్ సినిమాలోని 'పక్కా లోకల్' పాటకి చిందులు వేసి హైదరాబాద్ మీద ఉన్న మమకారాన్ని తెలియచేస్తూ అందరిని ఆశ్చర్యపరుస్తున్నాడు.",
+      media: [
+        {
+          "media-metadata": [
+            {
+              video: false,
+              url: require("./news_images/warner.jpeg")
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    },
+    {
+      title: "శక్తివంతమైన దేశంగా జపాన్ ఎలా మారింది?",
+      abstract:
+        "తెలంగాణ: ప్రపంచంలోనే మూడో శక్తివంతమైన దేశంగా జపాన్ ఎలా మారింది?ప్రపంచంలోనే మూడో శక్తివంతమైన దేశంగా జపాన్ ఎలా మారింది?ప్రపంచంలోనే మూడో శక్తివంతమైన దేశంగా జపాన్ ఎలా మారింది?",
+      media: [
+        {
+          "media-metadata": [
+            {
+              video: true,
+              url: "https://www.youtube.com/embed/8ymXpIKceMQ"
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    },
+    {
+      title: "#ఆకలితో #ఉన్న #చిన్నారి #మొహంలో #చిరునవ్వు",
+      abstract:
+        "తెలంగాణ: హైదరాబాద్ మేడ్చల్ ఔటర్ రింగ్ రోడ్డు వద్ద వలస కార్మికుల కుటుంబానికి చెందిన చిన్నారి అలసిపోయి ఉన్న క్రమంలో నాకు ఆహారం దొరికిందనే తన ఆనందం వర్ణనాతీతం.",
+      media: [
+        {
+          "media-metadata": [
+            {
+              url:
+                "https://scontent.ffjr1-2.fna.fbcdn.net/v/t1.0-9/97460335_139504204327753_7515342982950682624_o.jpg?_nc_cat=101&_nc_sid=110474&_nc_ohc=o4kH5EyxKIcAX9ymO9K&_nc_ht=scontent.ffjr1-2.fna&oh=082ed248c6c4a0739e239b8dfbd99721&oe=5EEAEC72"
+            }
+          ]
+        }
+      ],
+      published_date: "20/04/2020",
+      byline: "Kalyan Vanatadapula"
+    },
+    {
+      title: "లాక్ డౌన్ కారణంగా చాలా మంది యువతలో వచ్చిన మార్పు?",
+      abstract:
+        "తెలంగాణ: లాక్ డౌన్ కారణంగా చాలా మంది #యువతలో వచ్చిన ఒక #మార్పు." +
+        "#స్వచ్ఛంద #సంస్థల #ద్వారా #సమాజసేవ" +
+        "ఆకలితో అలమిటిస్తున్న అనాథలకు కడుపు నిండా అన్నం పెట్టి ఆదుకుంటున్న యువత",
       image: "",
       media: [
         {
           "media-metadata": [
             {
-              url:
-                "https://scontent.ffjr1-3.fna.fbcdn.net/v/t1.0-9/90812945_120283676249806_7589649318785581056_n.jpg?_nc_cat=108&_nc_sid=110474&_nc_ohc=94OQmqYMHGoAX_hJ0mn&_nc_ht=scontent.ffjr1-3.fna&oh=79b41aac15267b1279ffd03ceef72047&oe=5EC32382"
+              video: true,
+              url: "https://www.youtube.com/embed/uA86vucn9Mc"
             }
           ]
         }
@@ -71,15 +142,15 @@ const App = () => {
       byline: "Kalyan Vanatadapula"
     },
     {
-      title: "The pain of God that is seen",
+      title: "#త్వరలో #ప్రపంచానికి #శుభవార్త ",
       abstract:
-        "The pain of God that is seen :- to save from corona virus Can't you stop coming out of the house by knowing our health and families that are taking care of our health and families? We are in hospital for you - you are at home for us",
+        "తెలంగాణ: #త్వరలో #ప్రపంచానికి #శుభవార్త - #కరోనాకి #అమెరికా #చెక్ కరోనా స్టడీ :కరోనా వైరస్ ఫై అమెరికా విస్తృత పరిశోధనలు , 75 రీసెర్చ్ సంస్థలను ఒకే వేదిక మీదకు తెచ్చిన అమెరికా CDC .",
       media: [
         {
           "media-metadata": [
             {
               url:
-                "https://scontent.ffjr1-4.fna.fbcdn.net/v/t1.0-9/91140881_119407719670735_2205955723609767936_n.jpg?_nc_cat=106&_nc_sid=110474&_nc_ohc=h5xUfuTJeoMAX8gxGZD&_nc_ht=scontent.ffjr1-4.fna&oh=3e4ee2b683123062ef336c6284ba50aa&oe=5EC4E1A9"
+                "https://scontent.ffjr1-4.fna.fbcdn.net/v/t1.0-9/p960x960/95323677_134587621486078_6898683462765510656_o.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=zVvArYku0D8AX9A-U1G&_nc_ht=scontent.ffjr1-4.fna&_nc_tp=6&oh=b53835b4a583c46a8538c19c20e953be&oe=5EEC3C3D"
             }
           ]
         }
@@ -88,15 +159,15 @@ const App = () => {
       byline: "Kalyan Vanatadapula"
     },
     {
-      title: "Victory to escape",
+      title: "రాష్ట్రీయ స్వయం సేవక్ సంఘ్(RSS)",
       abstract:
-        "As a part of the janata office, the s under the guidance of extend district. Mr. Vivek garu, the woman who is suffering from full pregnant woman has been noticed and sent to the government hospital in police vehicle.",
+        "తెలంగాణ: కరోనా వైరస్ నుండి ప్రజలను కాపాతున్న వైద్య సిబ్బందికి రాష్ట్రీయ స్వయం సేవక్ సంఘ్(RSS) వారి గౌరవ వందనం",
       media: [
         {
           "media-metadata": [
             {
-              url:
-                "https://scontent.ffjr1-4.fna.fbcdn.net/v/t1.0-9/90194672_118958469715660_4662023593482256384_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=veUEBXskN4oAX8tvEsT&_nc_ht=scontent.ffjr1-4.fna&oh=8a894db2f88d10eb9944af20f34b0814&oe=5EC406ED"
+              video: true,
+              url: "https://www.youtube.com/embed/Ivgtbc0pVk8"
             }
           ]
         }
@@ -248,35 +319,50 @@ const App = () => {
           width: "100%"
         }}
       >
-        <div
-          className="blinking"
-          style={{ left: 0, position: "absolute", zIndex: 10 }}
+        <FlipPage
+          className="book"
+          showSwipeHint
+          uncutPages
+          orientation="vertical"
+          width="100%"
+          height="640"
+          pageBackground="#fffdf8"
+          animationDuration="400"
         >
-          <b style={{ left: 0 }}>Latest News..</b>
-        </div>
-        <Slider style={{ width: "200px" }} autoplay={3000} duration={1000}>
           {content.map((item, index) => (
             <div>
-              <img
-                height="100%"
-                width="100%"
-                src={item.media[0]["media-metadata"][0].url}
-              />
+              {item.media[0]["media-metadata"][0].video ? (
+                <iframe
+                  style={{ width: "100%", height: "250px" }}
+                  src={item.media[0]["media-metadata"][0].url + "?controls=0"}
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              ) : (
+                <img
+                  height="320"
+                  width="100%"
+                  src={item.media[0]["media-metadata"][0].url}
+                />
+              )}
               <div className="center">
-                <h6 style={{ color: "#fff", background: "#000" }}>
-                  {item.title}
-                </h6>
+                <p style={{ color: "#000" }}>
+                  <b>{item.title}</b>
+                </p>
+                <p style={{ color: "#000" }}>{item.abstract}</p>
+                {/* 
                 <Button
                   variant="contained"
                   onClick={() => detailedNewsOpen(item)}
                   color="secondary"
                 >
                   Read more
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}
-        </Slider>
+        </FlipPage>
       </div>
       <div className="result-section">
         {getMostpopularArticles && (
