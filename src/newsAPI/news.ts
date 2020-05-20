@@ -9,7 +9,7 @@ export const Q3news = [
           "media-metadata": [
             {
               video: false,
-              url: require("./news_images/orr.jpeg")
+              url: require("./../news_images/orr.jpeg")
             }
           ]
         }
@@ -26,7 +26,7 @@ export const Q3news = [
           "media-metadata": [
             {
               video: false,
-              url: require("./news_images/mahindra.jpeg")
+              url: require("./../news_images/mahindra.jpeg")
             }
           ]
         }
@@ -43,7 +43,7 @@ export const Q3news = [
           "media-metadata": [
             {
               video: false,
-              url: require("./news_images/news1.jpeg")
+              url: require("./../news_images/news1.jpeg")
             }
           ]
         }
@@ -60,7 +60,7 @@ export const Q3news = [
           "media-metadata": [
             {
               video: false,
-              url: require("./news_images/beware.jpeg")
+              url: require("./../news_images/beware.jpeg")
             }
           ]
         }
@@ -77,7 +77,7 @@ export const Q3news = [
           "media-metadata": [
             {
               video: false,
-              url: require("./news_images/warner.jpeg")
+              url: require("./../news_images/warner.jpeg")
             }
           ]
         }
