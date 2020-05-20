@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e768c8958ffd09469dc6ecbff6dff8e",
+    "revision": "b2f768aec88e3df4042e9019b9139607",
     "url": "/Q3News/index.html"
   },
   {
-    "revision": "a359b18245813c2132bc",
+    "revision": "f7fdf71fa1a74550dc1a",
     "url": "/Q3News/static/css/2.7e3db1e3.chunk.css"
   },
   {
-    "revision": "3f61b411075d2c86a4bc",
+    "revision": "523ce21fd33ffdc82e8d",
     "url": "/Q3News/static/css/main.3850a6b3.chunk.css"
   },
   {
-    "revision": "a359b18245813c2132bc",
-    "url": "/Q3News/static/js/2.9e438250.chunk.js"
+    "revision": "f7fdf71fa1a74550dc1a",
+    "url": "/Q3News/static/js/2.703d7df3.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Q3News/static/js/2.9e438250.chunk.js.LICENSE.txt"
+    "url": "/Q3News/static/js/2.703d7df3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3f61b411075d2c86a4bc",
-    "url": "/Q3News/static/js/main.8da9af8e.chunk.js"
+    "revision": "523ce21fd33ffdc82e8d",
+    "url": "/Q3News/static/js/main.df53e645.chunk.js"
   },
   {
     "revision": "faf6cd706c23cd7b222a",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e517a26f12b5b20c3179e51e25c07d5f",
     "url": "/Q3News/static/media/news1.e517a26f.jpeg"
+  },
+  {
+    "revision": "704bc8c45f9eb8892343b55fa9d0f1c9",
+    "url": "/Q3News/static/media/orr.704bc8c4.jpeg"
   },
   {
     "revision": "4041e7413b1a0d1980fe4fcbeaf7f08c",
