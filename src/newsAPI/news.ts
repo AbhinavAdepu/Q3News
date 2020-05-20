@@ -8,7 +8,7 @@ export const Q3news = [
         "media-metadata": [
           {
             video: false,
-            url: require("./../news_images/orr.jpeg")
+            url: require("./../news_images/flight1.jpeg")
           }
         ]
       }
