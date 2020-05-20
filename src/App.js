@@ -20,6 +20,7 @@ import { Q3news } from "./newsAPI/news";
 
 const App = () => {
   const content = Q3news;
+
   const [getMostpopularArticles, setMostpopularArticles] = React.useState(null);
   const [mainData, setMainaData] = React.useState(null);
   const [ifException, setException] = React.useState(false);
